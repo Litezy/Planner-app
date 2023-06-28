@@ -84,7 +84,7 @@ const TimerWidget = () => {
           <div className="timehd">{` ${mainhr < 10 ? '0' : ''}${mainhr}: ${hr < 10 ? '0' : ''}${hr}: ${min < 10 ? '0' : ''}${min}: ${sec < 10 ? '0' : ''}${sec}`}</div>
           <div className="iconspad">
             {/* < onClick={stopStopwatch} /> */}
-            <Icon onClick={startStopwatch} style={{ fontSize: '5rem' }} />
+            <Icon onClick={startStopwatch} style={{ fontSize: '3rem' }} />
             <LuTimerReset onClick={resetStopwatch} />
           </div>
         </div>
