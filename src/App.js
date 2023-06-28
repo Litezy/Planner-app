@@ -25,6 +25,7 @@ function App() {
   }
  }
  
+
  return (
   <>
    {showWidgetModal && <WidgetGalleryModal setShowWidgetModal={setShowWidgetModal} selectedWidgetArea={selectedWidgetArea} widgets={widgets} setWidgets={setWidgets} />}
