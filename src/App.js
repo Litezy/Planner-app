@@ -3,8 +3,9 @@ import './App.css';
 import ClockWidget from './widgets/ClockWidget';
 import WidgetGalleryModal from './modals/WidgetGalleryModal';
 import Draggable from 'react-draggable';
-import StopwatchWidget from './widgets/StopwatchWidget';
 import CalendarWidget from './widgets/CalendarWidget';
+import TimerWidget from './widgets/TimerWidget';
+import MyCustomWidget from './widgets/MyCustomWidget';
 ;
  
 function App() {
@@ -12,7 +13,8 @@ function App() {
  const [widgets, setWidgets] = useState([
   { id: new Date().getTime(), component: <ClockWidget />, area: 'main-widget', name: "Date and Time" },
   { id: new Date().getTime() + 2, component: <CalendarWidget />, area: 'right-widget', name: "Calendar" },
-  { id: new Date().getTime() + 1, component: <StopwatchWidget />, area: 'left-widget', name:"Timer" },
+  { id: new Date().getTime() + 1, component: <MyCustomWidget />, area: 'main-widget', name:"Stopwatch" },
+  { id: new Date().getTime() + 1, component: <TimerWidget />, area: 'left-widget', name:"Timer" },
  ])
  const [showWidgetModal, setShowWidgetModal] = useState(false)
  const [selectedWidgetArea, setSelectedWidgetArea] = useState('')

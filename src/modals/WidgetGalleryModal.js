@@ -1,16 +1,17 @@
 import React, { useState } from 'react'
 import ClockWidget from '../widgets/ClockWidget'
 import ReminderListWidget from '../widgets/ReminderListWidget'
-import StopwatchWidget from '../widgets/StopwatchWidget'
+import TimerWidget from '../widgets/TimerWidget'
 import CalendarWidget from '../widgets/CalendarWidget'
-
+import MyCustomWidget from '../widgets/MyCustomWidget'
 
 export default function WidgetGalleryModal({ setShowWidgetModal, selectedWidgetArea, widgets, setWidgets }) {
   const [galleryWidgets, setGalleryWidgets] = useState([
     { component: <ClockWidget />, name: "Date and Time" },
     { component: <ReminderListWidget />, name: "Reminder List" },
-    { component: <StopwatchWidget />, name: "Stopwatch" },
+    { component: <TimerWidget />, name: "Timer" },
     { component: <CalendarWidget />, name: "Calendar" },
+    { component: <MyCustomWidget />, name: "Stopwatch" },
   ])
   return (
     <div className="modal"
